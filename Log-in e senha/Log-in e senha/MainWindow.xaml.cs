@@ -17,6 +17,8 @@ using System.IO;
 using System.Runtime.Remoting.Messaging;
 using System.Linq.Expressions;
 using System.IO.Packaging;
+using System.Text.RegularExpressions;
+using System.Security.RightsManagement;
 
 namespace Log_in_e_senha
 {
@@ -100,29 +102,20 @@ namespace Log_in_e_senha
         }
         #endregion
 
-        #region functions
-        bool passwordsteps(string user, string pin)
-        {
-            Catch();
-            
-            //senha segura
-
-            if (pin.Length > 5)
-            {
-                
-            }
-            else { return false; }
-        }
-        
-
-        #endregion
 
         public void Signin_btn_Click(object sender, RoutedEventArgs e)
         {
             String username = Usernametxt.Text;
             String senha = Senhatxt.Text;
-            save(username, senha);
+            validador func = new validador();
 
+            
+            if (func.securepin(senha))
+            {
+                Clean();
+                save(username, senha);
+                MessageBox.Show("informações savas com sucesso");
+            }
         }
 
         public void Login_btn_Click(object sender, RoutedEventArgs e)
@@ -131,6 +124,38 @@ namespace Log_in_e_senha
             String username = Usernametxt.Text;
             String senha = Senhatxt.Text;
             
+
+        }
+        private void Window_MouseDown(object sender, MouseButtonEventArgs e)
+        {
+            if (e.ChangedButton == MouseButton.Left)
+            {
+                this.DragMove(); 
+            }
+        }
+    }
+
+    public class validador
+    {
+        Dictionary<string, Func<string, bool>> Crit = new Dictionary<string, Func<string, bool>> {
+            {"tamanho de 6 digitos", senha => senha.Length >= 6 },
+            {"caractere especial", senha => Regex.IsMatch(senha, @"[W_]")},
+            {"letra maiúscula", senha => Regex.IsMatch(senha, @"[A-Z]")},
+            {"letra minúscula", senha => Regex.IsMatch(senha, @"[a-z]")},
+            {"numeros", senha => Regex.IsMatch(senha, @"[0-9]")}
+        };
+
+        public bool securepin(string senha)
+        { 
+            foreach(var criterios in Crit)
+            {
+                if (!criterios.Value(senha))
+                {
+                    MessageBox.Show($"sua senha deve conter {criterios.Key}");
+                    return false;
+                }
+            }
+            return true;
         }
     }
 
