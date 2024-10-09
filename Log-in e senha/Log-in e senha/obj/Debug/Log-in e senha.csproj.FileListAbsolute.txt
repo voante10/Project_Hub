@@ -13,3 +13,18 @@ C:\Users\santa\source\repos\Log-in e senha\Log-in e senha\obj\Debug\Log-in e sen
 C:\Users\santa\source\repos\Log-in e senha\Log-in e senha\obj\Debug\Log-in e senha.csproj.CoreCompileInputs.cache
 C:\Users\santa\source\repos\Log-in e senha\Log-in e senha\obj\Debug\Log-in e senha.exe
 C:\Users\santa\source\repos\Log-in e senha\Log-in e senha\obj\Debug\Log-in e senha.pdb
+E:\Programação\XAML\Log-in e senha\Log-in e senha\bin\Debug\Log-in e senha.exe.config
+E:\Programação\XAML\Log-in e senha\Log-in e senha\bin\Debug\Log-in e senha.exe
+E:\Programação\XAML\Log-in e senha\Log-in e senha\bin\Debug\Log-in e senha.pdb
+E:\Programação\XAML\Log-in e senha\Log-in e senha\obj\Debug\Log-in e senha.csproj.AssemblyReference.cache
+E:\Programação\XAML\Log-in e senha\Log-in e senha\obj\Debug\MainWindow.g.cs
+E:\Programação\XAML\Log-in e senha\Log-in e senha\obj\Debug\App.g.cs
+E:\Programação\XAML\Log-in e senha\Log-in e senha\obj\Debug\Log-in e senha_MarkupCompile.cache
+E:\Programação\XAML\Log-in e senha\Log-in e senha\obj\Debug\Log-in e senha_MarkupCompile.lref
+E:\Programação\XAML\Log-in e senha\Log-in e senha\obj\Debug\MainWindow.baml
+E:\Programação\XAML\Log-in e senha\Log-in e senha\obj\Debug\Log-in e senha.g.resources
+E:\Programação\XAML\Log-in e senha\Log-in e senha\obj\Debug\Log_in_e_senha.Properties.Resources.resources
+E:\Programação\XAML\Log-in e senha\Log-in e senha\obj\Debug\Log-in e senha.csproj.GenerateResource.cache
+E:\Programação\XAML\Log-in e senha\Log-in e senha\obj\Debug\Log-in e senha.csproj.CoreCompileInputs.cache
+E:\Programação\XAML\Log-in e senha\Log-in e senha\obj\Debug\Log-in e senha.exe
+E:\Programação\XAML\Log-in e senha\Log-in e senha\obj\Debug\Log-in e senha.pdb

@@ -5,8 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Log_in_e_senha"
         mc:Ignorable="d"
-        Title="Login" Height="450" Width="820" ResizeMode="NoResize" Background="#151515" WindowStyle="None"
-        >
+        Title="Login" Height="440" Width="400" ResizeMode="NoResize" Background="#151515" WindowStyle="None">
 
     <Window.Resources>
 
@@ -40,6 +39,7 @@
             <Setter Property="BorderBrush" Value="Transparent"/>
             <Setter Property="Foreground" Value="#B1B1B1"/>
             <Setter Property="FontSize" Value="10"/>
+            <Setter Property="Cursor" Value="Hand"/>
             <Style.Triggers>
                 <Trigger Property="IsMouseOver" Value="True">
                     <Setter Property="Background" Value="#2F2F2F"/>
@@ -50,7 +50,7 @@
         <!-- Estilo para Botão Normal -->
         <Style TargetType="Button" x:Key="Normal">
             <Setter Property="Background" Value="Transparent"/>
-            <Setter Property="BorderBrush" Value="Aqua"/>
+            <Setter Property="BorderBrush" Value="White"/>
             <Setter Property="Foreground" Value="#B1B1B1"/>
             <Setter Property="FontSize" Value="15"/>
             <Setter Property="Cursor" Value="Hand"/>
@@ -73,27 +73,60 @@
                 </Setter.Value>
             </Setter>
             <Style.Triggers>
-                <Trigger Property="IsMouseOver" Value="True">
-                    <Setter Property="Background" Value="#082234"/>
-                    
-                </Trigger>
+                <!-- Animação de Hover -->
+                <EventTrigger RoutedEvent="Button.MouseEnter">
+                    <BeginStoryboard>
+                        <Storyboard>
+                            <!-- Animação do Fundo -->
+                            <ColorAnimation
+                                Storyboard.TargetProperty="(Button.Background).(SolidColorBrush.Color)"
+                                From="Transparent"
+                                To="White"
+                                Duration="0:0:0.5"/>
+                            <!-- Animação do Texto -->
+                            <ColorAnimation
+                                Storyboard.TargetProperty="(Button.Foreground).(SolidColorBrush.Color)"
+                                From="White"
+                                To="Black"
+                                Duration="0:0:0.5"/>
+                        </Storyboard>
+                    </BeginStoryboard>
+                </EventTrigger>
+                
+                <!-- Animação de Saída -->
+                <EventTrigger RoutedEvent="Button.MouseLeave">
+                    <BeginStoryboard>
+                        <Storyboard>
+                            <!-- Animação do Fundo -->
+                            <ColorAnimation
+                                Storyboard.TargetProperty="(Button.Background).(SolidColorBrush.Color)"
+                                From="White"
+                                To="Transparent"
+                                Duration="0:0:0.5"/>
+                            <!-- Animação do Texto -->
+                            <ColorAnimation
+                                Storyboard.TargetProperty="(Button.Foreground).(SolidColorBrush.Color)"
+                                From="Black"
+                                To="White"
+                                Duration="0:0:0.5"/>
+                        </Storyboard>
+                    </BeginStoryboard>
+                </EventTrigger>
             </Style.Triggers>
         </Style>
 
         <!-- Estilo para Border com Borda Arredondada -->
         <Style TargetType="Border" x:Key="BorderWithCornerRadius">
             <Setter Property="CornerRadius" Value="10"/>
-            <Setter Property="Background" Value="#252525"/>
+            <Setter Property="Background" Value="Transparent"/>
             <Setter Property="BorderBrush" Value="Transparent"/>
             <Setter Property="BorderThickness" Value="4"/>
-
         </Style>
 
-        <!--Textblock-->
+        <!-- TextBlock -->
         <Style TargetType="TextBlock" x:Key="TextblockP">
             <Setter Property="FontSize" Value="25"/>
             <Setter Property="Foreground" Value="#A9A9A9"/>
-
         </Style>
 
     </Window.Resources>
@@ -108,47 +141,26 @@
             <RowDefinition Height="*"/>
         </Grid.RowDefinitions>
 
-        <StackPanel  Background="#1E1E1E" Grid.ColumnSpan="2" Width="820" Height="20" VerticalAlignment="Top" Grid.Row="0" MouseDown="Window_MouseDown">
-            <Button x:Name="Cancel_btn" Content="X"  Height="20" Width="40" Style="{StaticResource cancel}" Click="Cancel_btn_Click" HorizontalAlignment="Right"   />
-
+        <StackPanel  Background="#1E1E1E" Grid.ColumnSpan="2" Height="20" VerticalAlignment="Center" MouseDown="Window_MouseDown">
+            <Button x:Name="Cancel_btn" Content="X" Height="20" Width="40" Style="{StaticResource cancel}" Click="Cancel_btn_Click" HorizontalAlignment="Right"/>
         </StackPanel>
 
+        <!-- Form -->
+        <Border Style="{StaticResource BorderWithCornerRadius}" Grid.Row="1" HorizontalAlignment="Left" VerticalAlignment="Top" Width="400" Height="400" Grid.ColumnSpan="2" Margin="0,5,0,0">
+            <StackPanel Grid.Row="1" VerticalAlignment="Center" HorizontalAlignment="Center">
+                <Image Height="100" Width="100" Grid.Row="1" Margin="0,5,0,15" Cursor="" Source="Assets/logo.png"/>
 
-        <!-- LOGIN -->
+                <TextBlock Text="Username" Style="{StaticResource TextblockP}" HorizontalAlignment="Center" FontSize="20"/>
+                <TextBox x:Name="Usernametxt" Width="300" Height="38" Tag="Username" TextAlignment="Left"/>
 
-        <Border Style="{StaticResource BorderWithCornerRadius}" Grid.Row="1" HorizontalAlignment="Left" VerticalAlignment="Top" Width="780" Height="50" Margin="20,10,0,0" Grid.ColumnSpan="2"   >
-            <StackPanel  VerticalAlignment="Center" HorizontalAlignment="Center"   Background="transparent">
-                <TextBlock Text="LOGIN" Style="{StaticResource TextblockP}" />
+                <TextBlock Text="Senha" Margin="0,10,0,0" Style="{StaticResource TextblockP}" HorizontalAlignment="Center" FontSize="20"/>
+                <TextBox x:Name="Senhatxt" Width="300" Height="38" Tag="Senha" TextAlignment="Left" Margin="0,0,0,30"/>
+
+                <StackPanel Orientation="Horizontal">
+                    <Button x:Name="Login_btn" Content="Log-in" Height="38" Width="150" Style="{StaticResource Normal}" Click="Login_btn_Click"/>
+                    <Button x:Name="Signin_btn" Content="Sign-in" Height="38" Width="150" Style="{StaticResource Normal}" Click="Signin_btn_Click" Margin="10"/>
+                </StackPanel>
             </StackPanel>
         </Border>
-
-
-
-        <!-- Input -->
-        <Border Style="{StaticResource BorderWithCornerRadius}" Grid.Row="2" HorizontalAlignment="Left" VerticalAlignment="Center" Width="450" Height="300" Margin="20"  >
-            <StackPanel Grid.Row="1" VerticalAlignment="Center" HorizontalAlignment="Center"   Background="transparent">
-                <TextBlock Text="Username" Style="{StaticResource TextblockP}" HorizontalAlignment="Center"/>
-                <TextBox x:Name="Usernametxt" Width="300" Height="50" Tag="Username"   TextAlignment="Left" />
-                <TextBlock Text="Senha" Margin="0,20,0,0" Style="{StaticResource TextblockP}" HorizontalAlignment="Center"/>
-                <TextBox x:Name="Senhatxt" Width="300" Height="50" Tag="Senha" TextAlignment="Left" Margin="0,0,0,30"/>
-            </StackPanel>
-        </Border>
-
-        <!-- Botões -->
-        <Border Style="{StaticResource BorderWithCornerRadius}" Grid.Row="2" HorizontalAlignment="Right" VerticalAlignment="Center" Width="300" Height="300" Grid.ColumnSpan="2" Margin="0,0,20,0"  >
-            <StackPanel VerticalAlignment="Center" HorizontalAlignment="Center" Background="Transparent" >
-                <Button x:Name="Login_btn" Content="Log-in" Margin="20" Height="38" Width="190" VerticalAlignment="Top" Style="{StaticResource Normal}" Click="Login_btn_Click"/>
-                <Button x:Name="Signin_btn" Content="Sign-in" Margin="20" Height="38
-                        " VerticalAlignment="Bottom" Style="{StaticResource Normal}" Click="Signin_btn_Click" />
-            </StackPanel>
-        </Border>
-
-        <Border Style="{StaticResource BorderWithCornerRadius}" Grid.Row="1" HorizontalAlignment="Left" VerticalAlignment="Bottom"  Width="780" Height="50" Margin="20,0,0,10" Grid.ColumnSpan="2"  >
-            <StackPanel VerticalAlignment="Center" HorizontalAlignment="Center" Background="Transparent" >
-                <TextBlock Text="Feito por Bruno Santana" Style="{StaticResource TextblockP}"/>
-            </StackPanel>
-        </Border>
-
-
     </Grid>
 </Window>
