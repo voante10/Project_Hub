@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Log_in_e_senha"
         mc:Ignorable="d"
-        Title="Login" Height="440" Width="400" ResizeMode="NoResize" Background="#151515" WindowStyle="None">
+        Title="Login" Height="440" Width="400" ResizeMode="NoResize" Background="Transparent" WindowStyle="None">
 
     <Window.Resources>
 
@@ -82,13 +82,13 @@
                                 Storyboard.TargetProperty="(Button.Background).(SolidColorBrush.Color)"
                                 From="Transparent"
                                 To="White"
-                                Duration="0:0:0.5"/>
+                                Duration="0:0:0.2"/>
                             <!-- Animação do Texto -->
                             <ColorAnimation
                                 Storyboard.TargetProperty="(Button.Foreground).(SolidColorBrush.Color)"
                                 From="White"
                                 To="Black"
-                                Duration="0:0:0.5"/>
+                                Duration="0:0:0.2"/>
                         </Storyboard>
                     </BeginStoryboard>
                 </EventTrigger>
@@ -102,13 +102,13 @@
                                 Storyboard.TargetProperty="(Button.Background).(SolidColorBrush.Color)"
                                 From="White"
                                 To="Transparent"
-                                Duration="0:0:0.5"/>
+                                Duration="0:0:0.2"/>
                             <!-- Animação do Texto -->
                             <ColorAnimation
                                 Storyboard.TargetProperty="(Button.Foreground).(SolidColorBrush.Color)"
                                 From="Black"
                                 To="White"
-                                Duration="0:0:0.5"/>
+                                Duration="0:0:0.2"/>
                         </Storyboard>
                     </BeginStoryboard>
                 </EventTrigger>
@@ -141,8 +141,8 @@
             <RowDefinition Height="*"/>
         </Grid.RowDefinitions>
 
-        <StackPanel  Background="#1E1E1E" Grid.ColumnSpan="2" Height="20" VerticalAlignment="Center" MouseDown="Window_MouseDown">
-            <Button x:Name="Cancel_btn" Content="X" Height="20" Width="40" Style="{StaticResource cancel}" Click="Cancel_btn_Click" HorizontalAlignment="Right"/>
+        <StackPanel Grid.ColumnSpan="2" Height="20" VerticalAlignment="Center" MouseDown="Window_MouseDown">
+            <Button x:Name="Cancel_btn" Content="X" Height="20" Width="40" Style="{StaticResource cancel}" Click="Cancel_btn_Click" HorizontalAlignment="Right" Background="{x:Null}"/>
         </StackPanel>
 
         <!-- Form -->
