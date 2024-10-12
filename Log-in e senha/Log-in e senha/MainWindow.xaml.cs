@@ -123,6 +123,18 @@ namespace Log_in_e_senha
             Catch();
             String username = Usernametxt.Text;
             String senha = Senhatxt.Text;
+            verify();
+            switch (verify()) {
+
+                case true:
+                    if (linhas[0] == username && linhas[1] == senha)
+                    {
+                        AppWindow app = new AppWindow();
+                        app.Show();
+                        Exit();
+                    }
+                    break;
+            }
             
 
         }
