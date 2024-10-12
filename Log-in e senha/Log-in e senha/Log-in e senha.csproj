@@ -102,9 +102,6 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <Resource Include=".gitignore.txt" />
-  </ItemGroup>
-  <ItemGroup>
     <Resource Include="Assets\logo.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
