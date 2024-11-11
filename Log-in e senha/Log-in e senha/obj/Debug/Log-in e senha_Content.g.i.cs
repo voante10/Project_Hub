@@ -8,6 +8,6 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("assets/logo.png")]
+[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute(".gitignore.txt")]
 
 

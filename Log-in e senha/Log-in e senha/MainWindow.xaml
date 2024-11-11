@@ -42,7 +42,7 @@
             <Setter Property="Cursor" Value="Hand"/>
             <Style.Triggers>
                 <Trigger Property="IsMouseOver" Value="True">
-                    <Setter Property="Background" Value="#2F2F2F"/>
+                    <Setter Property="Background" Value="DarkRed"/>
                 </Trigger>
             </Style.Triggers>
         </Style>
@@ -141,8 +141,8 @@
             <RowDefinition Height="*"/>
         </Grid.RowDefinitions>
 
-        <StackPanel Grid.ColumnSpan="2" Height="20" VerticalAlignment="Center" MouseDown="Window_MouseDown">
-            <Button x:Name="Cancel_btn" Content="X" Height="20" Width="40" Style="{StaticResource cancel}" Click="Cancel_btn_Click" HorizontalAlignment="Right" Background="{x:Null}"/>
+        <StackPanel Grid.ColumnSpan="2" Height="20" VerticalAlignment="Center" MouseDown="Window_MouseDown" Background="#1F1F1F">
+            <Button x:Name="Cancel_btn" Content="X" Height="20" Width="40" Style="{StaticResource cancel}" Click="Cancel_btn_Click" FocusVisualStyle="{x:Null}" HorizontalAlignment="Right" Background="#1F1F1F"/>
         </StackPanel>
 
         <!-- Form -->
