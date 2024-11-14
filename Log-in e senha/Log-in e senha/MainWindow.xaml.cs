@@ -34,6 +34,7 @@ namespace Log_in_e_senha
 
         static string[] linhas;
         int tentativa = 3;
+        int arquivo_existe = 0;
         
 
 
@@ -88,8 +89,8 @@ namespace Log_in_e_senha
             string app = AppDomain.CurrentDomain.BaseDirectory;
             string path = System.IO.Path.Combine(app, "dados.txt");
 
-            if (File.Exists(path)) { return true; }
-            else { return false; } 
+            if (File.Exists(path) && tentativa >= 1) { return true; arquivo_existe = 1;  }
+            else { return false; }  
         }
 
         static void Clean()
@@ -117,7 +118,7 @@ namespace Log_in_e_senha
                 MessageBox.Show("informações savas com sucesso");
             }
         }
-
+        
         public void Login_btn_Click(object sender, RoutedEventArgs e)
         {
             Catch();
@@ -127,13 +128,23 @@ namespace Log_in_e_senha
             switch (verify()) {
 
                 case true:
-                    if (linhas[0] == username && linhas[1] == senha)
+                    if (linhas[0] == username && linhas[1] == senha) 
                     {
                         AppWindow app = new AppWindow();
                         app.Show();
                         Exit();
                     }
+                    else
+                    {
+                        tentativa--;
+                        MessageBox.Show("voce possui " + tentativa + " tentativas");
+                    }
                     break;
+                case false:
+                    MessageBox.Show("Acabaram as tentativas");
+                    Exit();
+                    break;
+
             }
             
 
