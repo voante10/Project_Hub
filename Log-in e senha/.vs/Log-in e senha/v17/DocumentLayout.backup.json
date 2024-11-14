@@ -1,0 +1,70 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\santa\\source\\repos\\Project_Hub\\Log-in e senha\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{628BE708-222B-47A1-B964-E73B15C4B0F0}|Log-in e senha\\Log-in e senha.csproj|C:\\Users\\santa\\source\\repos\\Project_Hub\\Log-in e senha\\log-in e senha\\appwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{628BE708-222B-47A1-B964-E73B15C4B0F0}|Log-in e senha\\Log-in e senha.csproj|solutionrelative:log-in e senha\\appwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{628BE708-222B-47A1-B964-E73B15C4B0F0}|Log-in e senha\\Log-in e senha.csproj|c:\\users\\santa\\source\\repos\\project_hub\\log-in e senha\\log-in e senha\\appwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{628BE708-222B-47A1-B964-E73B15C4B0F0}|Log-in e senha\\Log-in e senha.csproj|solutionrelative:log-in e senha\\appwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{628BE708-222B-47A1-B964-E73B15C4B0F0}|Log-in e senha\\Log-in e senha.csproj|C:\\Users\\santa\\source\\repos\\Project_Hub\\Log-in e senha\\log-in e senha\\appwindow.xaml||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{628BE708-222B-47A1-B964-E73B15C4B0F0}|Log-in e senha\\Log-in e senha.csproj|solutionrelative:log-in e senha\\appwindow.xaml||{8B382828-6202-11D1-8870-0000F87579D2}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 2,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "AppWindow.xaml",
+              "DocumentMoniker": "C:\\Users\\santa\\source\\repos\\Project_Hub\\Log-in e senha\\Log-in e senha\\AppWindow.xaml",
+              "RelativeDocumentMoniker": "Log-in e senha\\AppWindow.xaml",
+              "ToolTip": "C:\\Users\\santa\\source\\repos\\Project_Hub\\Log-in e senha\\Log-in e senha\\AppWindow.xaml*",
+              "RelativeToolTip": "Log-in e senha\\AppWindow.xaml*",
+              "ViewState": "AgIAABsAAAAAAAAAAAAAACYAAAB8AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-11-11T23:29:27.902Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "AppWindow.xaml",
+              "DocumentMoniker": "C:\\Users\\santa\\source\\repos\\Project_Hub\\Log-in e senha\\Log-in e senha\\AppWindow.xaml",
+              "RelativeDocumentMoniker": "Log-in e senha\\AppWindow.xaml",
+              "ToolTip": "C:\\Users\\santa\\source\\repos\\Project_Hub\\Log-in e senha\\Log-in e senha\\AppWindow.xaml*",
+              "RelativeToolTip": "Log-in e senha\\AppWindow.xaml*",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-10-12T15:57:56.284Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "AppWindow.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\santa\\source\\repos\\Project_Hub\\Log-in e senha\\Log-in e senha\\AppWindow.xaml.cs",
+              "RelativeDocumentMoniker": "Log-in e senha\\AppWindow.xaml.cs",
+              "ToolTip": "C:\\Users\\santa\\source\\repos\\Project_Hub\\Log-in e senha\\Log-in e senha\\AppWindow.xaml.cs",
+              "RelativeToolTip": "Log-in e senha\\AppWindow.xaml.cs",
+              "ViewState": "AgIAACcAAAAAAAAAAAAgwD8AAAAzAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-11T23:33:15.244Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

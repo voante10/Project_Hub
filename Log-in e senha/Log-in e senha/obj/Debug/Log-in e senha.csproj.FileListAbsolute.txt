@@ -43,3 +43,5 @@ C:\Users\santa\source\repos\Project_hub\Log-in e senha\Log-in e senha\obj\Debug\
 C:\Users\santa\source\repos\Project_hub\Log-in e senha\Log-in e senha\obj\Debug\Log-in e senha.csproj.CoreCompileInputs.cache
 C:\Users\santa\source\repos\Project_hub\Log-in e senha\Log-in e senha\obj\Debug\Log-in e senha.exe
 C:\Users\santa\source\repos\Project_hub\Log-in e senha\Log-in e senha\obj\Debug\Log-in e senha.pdb
+C:\Users\santa\Source\Repos\Project_Hub\Log-in e senha\Log-in e senha\obj\Debug\AppWindow.g.cs
+C:\Users\santa\Source\Repos\Project_Hub\Log-in e senha\Log-in e senha\obj\Debug\AppWindow.baml

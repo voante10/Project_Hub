@@ -5,8 +5,39 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Log_in_e_senha"
         mc:Ignorable="d"
-        Title="AppWindow" Height="450" Width="800">
+        Title="AppWindow" Height="450" Width="800" WindowStyle="None" Background="#111111">
+    <Window.Resources>
+
+        <!--Botão cancelar-->
+        <Style TargetType="Button" x:Key="cancel">
+            <Setter Property="Background" Value="#1E1E1E"/>
+            <Setter Property="BorderBrush" Value="Transparent"/>
+            <Setter Property="Foreground" Value="#B1B1B1"/>
+            <Setter Property="FontSize" Value="10"/>
+            <Setter Property="Cursor" Value="Hand"/>
+        </Style>
+
+
+    </Window.Resources>
     <Grid>
-        
+        <Grid.RowDefinitions>
+            <RowDefinition Height="20"/>
+            <RowDefinition Height="0"/>
+            <RowDefinition/>
+            <RowDefinition Height="0*"/>
+
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="41*"/>
+            <ColumnDefinition Width="9*"/>
+        </Grid.ColumnDefinitions>
+
+        <StackPanel x:Name="barra_superior" Background="#1F1F1F" Grid.Row="0" MouseDown="WindowMD" Grid.ColumnSpan="2" >
+            <Button x:Name="CloseBTN" Content="X" Height="20" Width="40" Style="{StaticResource cancel}" Click="Cancel_btn_Click" FocusVisualStyle="{x:Null}" HorizontalAlignment="Right" Background="#1F1F1F"/>
+        </StackPanel>
+        <StackPanel x:Name="Dashboard" Background="#1A1A1A" Grid.Row="2" Grid.Column="1">
+            <TextBlock x:Name="Relogio" HorizontalAlignment="Center" VerticalAlignment="Top" Foreground="#B1B1B1" Margin="20"/>
+        </StackPanel>
+
     </Grid>
 </Window>
