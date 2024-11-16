@@ -3,16 +3,16 @@
   "WorkspaceRootPath": "C:\\Users\\santa\\source\\repos\\Project_Hub\\Log-in e senha\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{628BE708-222B-47A1-B964-E73B15C4B0F0}|Log-in e senha\\Log-in e senha.csproj|c:\\users\\santa\\source\\repos\\project_hub\\log-in e senha\\log-in e senha\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{628BE708-222B-47A1-B964-E73B15C4B0F0}|Log-in e senha\\Log-in e senha.csproj|solutionrelative:log-in e senha\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{628BE708-222B-47A1-B964-E73B15C4B0F0}|Log-in e senha\\Log-in e senha.csproj|c:\\users\\santa\\source\\repos\\project_hub\\log-in e senha\\log-in e senha\\erro_1.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
       "RelativeMoniker": "D:0:0:{628BE708-222B-47A1-B964-E73B15C4B0F0}|Log-in e senha\\Log-in e senha.csproj|solutionrelative:log-in e senha\\erro_1.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{628BE708-222B-47A1-B964-E73B15C4B0F0}|Log-in e senha\\Log-in e senha.csproj|c:\\users\\santa\\source\\repos\\project_hub\\log-in e senha\\log-in e senha\\erro_1.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{628BE708-222B-47A1-B964-E73B15C4B0F0}|Log-in e senha\\Log-in e senha.csproj|solutionrelative:log-in e senha\\erro_1.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{628BE708-222B-47A1-B964-E73B15C4B0F0}|Log-in e senha\\Log-in e senha.csproj|c:\\users\\santa\\source\\repos\\project_hub\\log-in e senha\\log-in e senha\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{628BE708-222B-47A1-B964-E73B15C4B0F0}|Log-in e senha\\Log-in e senha.csproj|solutionrelative:log-in e senha\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{628BE708-222B-47A1-B964-E73B15C4B0F0}|Log-in e senha\\Log-in e senha.csproj|C:\\Users\\santa\\source\\repos\\Project_Hub\\Log-in e senha\\log-in e senha\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
@@ -34,7 +34,7 @@
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 1,
               "Title": "Erro_1.xaml.cs",
               "DocumentMoniker": "C:\\Users\\santa\\Source\\Repos\\Project_Hub\\Log-in e senha\\Log-in e senha\\Erro_1.xaml.cs",
               "RelativeDocumentMoniker": "Log-in e senha\\Erro_1.xaml.cs",
@@ -47,7 +47,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 0,
               "Title": "Erro_1.xaml",
               "DocumentMoniker": "C:\\Users\\santa\\source\\repos\\Project_Hub\\Log-in e senha\\Log-in e senha\\Erro_1.xaml",
               "RelativeDocumentMoniker": "Log-in e senha\\Erro_1.xaml",
@@ -105,12 +105,12 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 2,
               "Title": "MainWindow.xaml.cs",
               "DocumentMoniker": "C:\\Users\\santa\\source\\repos\\Project_Hub\\Log-in e senha\\Log-in e senha\\MainWindow.xaml.cs",
               "RelativeDocumentMoniker": "Log-in e senha\\MainWindow.xaml.cs",
-              "ToolTip": "C:\\Users\\santa\\source\\repos\\Project_Hub\\Log-in e senha\\Log-in e senha\\MainWindow.xaml.cs*",
-              "RelativeToolTip": "Log-in e senha\\MainWindow.xaml.cs*",
+              "ToolTip": "C:\\Users\\santa\\source\\repos\\Project_Hub\\Log-in e senha\\Log-in e senha\\MainWindow.xaml.cs",
+              "RelativeToolTip": "Log-in e senha\\MainWindow.xaml.cs",
               "ViewState": "AgIAAIIAAAAAAAAAAAAcwJQAAAApAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-11-14T02:36:57.341Z",

@@ -34,8 +34,15 @@ namespace Log_in_e_senha
         private void Button_Click_1(object sender, RoutedEventArgs e)
         {
             var Log = new MainWindow();
-            Log.Close();
+            MainWindow.Instance.Close();
             this.Close();
+        }
+        private void Window_MouseDown(object sender, MouseButtonEventArgs e)
+        {
+            if (e.ChangedButton == MouseButton.Left)
+            {
+                this.DragMove();
+            }
         }
     }
 }
