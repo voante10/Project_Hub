@@ -27,15 +27,22 @@ namespace Log_in_e_senha
     /// </summary>
     public partial class MainWindow : Window
     {
+        public static MainWindow Instance { get; private set; }
         public MainWindow()
         {
             InitializeComponent();
+            Instance = this;
         }
 
         static string[] linhas;
         int tentativa = 3;
         int arquivo_existe = 0;
-        
+
+        public void teste()
+        {
+            tentativa--;
+        }
+
 
 
         #region Cancel button
@@ -66,19 +73,19 @@ namespace Log_in_e_senha
                 MessageBox.Show("Ocorreu um erro ao armazenar o texto: " + ex.Message);
             }
         }
-        
+
         static void Catch()
         {
-            
+
             try
             {
-                using(StreamReader Reader = new StreamReader("dados.txt"))
+                using (StreamReader Reader = new StreamReader("dados.txt"))
                 {
                     string texto = Reader.ReadToEnd();
                     linhas = texto.Split(new[] { Environment.NewLine }, StringSplitOptions.None);
                 }
             }
-            catch (Exception ex) 
+            catch (Exception ex)
             {
                 MessageBox.Show(ex.Message);
             }
@@ -89,8 +96,8 @@ namespace Log_in_e_senha
             string app = AppDomain.CurrentDomain.BaseDirectory;
             string path = System.IO.Path.Combine(app, "dados.txt");
 
-            if (File.Exists(path) && tentativa >= 1) { return true; arquivo_existe = 1;  }
-            else { return false; }  
+            if (File.Exists(path) && tentativa >= 1) { return true; arquivo_existe = 1; }
+            else { return false; }
         }
 
         static void Clean()
@@ -110,15 +117,15 @@ namespace Log_in_e_senha
             String senha = Senhatxt.Text;
             validador func = new validador();
 
-            
+
             if (func.securepin(senha))
             {
                 Clean();
                 save(username, senha);
-                MessageBox.Show("informações savas com sucesso");
+                MessageBox.Show("informações salvas com sucesso");
             }
         }
-        
+
         public void Login_btn_Click(object sender, RoutedEventArgs e)
         {
             Catch();
@@ -128,7 +135,7 @@ namespace Log_in_e_senha
             switch (verify()) {
 
                 case true:
-                    if (linhas[0] == username && linhas[1] == senha) 
+                    if (linhas[0] == username && linhas[1] == senha)
                     {
                         AppWindow app = new AppWindow();
                         app.Show();
@@ -136,8 +143,10 @@ namespace Log_in_e_senha
                     }
                     else
                     {
-                        tentativa--;
-                        MessageBox.Show("voce possui " + tentativa + " tentativas");
+                        Erro_1 err = new Erro_1();
+                        err.Show();
+
+                        Console.WriteLine("voce possui " + tentativa + " tentativas");
                     }
                     break;
                 case false:
@@ -146,9 +155,11 @@ namespace Log_in_e_senha
                     break;
 
             }
-            
+
 
         }
+        
+
         private void Window_MouseDown(object sender, MouseButtonEventArgs e)
         {
             if (e.ChangedButton == MouseButton.Left)

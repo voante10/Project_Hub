@@ -1,0 +1,20 @@
+﻿<Window x:Class="Log_in_e_senha.Erro_1"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Log_in_e_senha"
+        mc:Ignorable="d"
+        Title="Erro_1" Height="200" Width="200"
+        Background="#1F1F1F"
+        ResizeMode="NoResize" WindowStyle="None">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="17*"/>
+            <RowDefinition Height="29*"/>
+        </Grid.RowDefinitions>
+        <TextBlock Text="Something got wrong, try again?" VerticalAlignment="Bottom" HorizontalAlignment="Center" Foreground="#B1B1B1"  Height="20" Grid.RowSpan="1"/>
+        <Button Width="40" Height="20" HorizontalAlignment="Left" Click="Button_Click" Grid.Row="1" Margin="30">try</Button>
+        <Button Width="40" Height="20" Content="Cancel" HorizontalAlignment="Right" Margin="30" Click="Button_Click_1" Grid.Row="1"/>
+    </Grid>
+</Window>

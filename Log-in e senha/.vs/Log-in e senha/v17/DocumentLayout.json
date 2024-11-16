@@ -3,6 +3,14 @@
   "WorkspaceRootPath": "C:\\Users\\santa\\source\\repos\\Project_Hub\\Log-in e senha\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{628BE708-222B-47A1-B964-E73B15C4B0F0}|Log-in e senha\\Log-in e senha.csproj|c:\\users\\santa\\source\\repos\\project_hub\\log-in e senha\\log-in e senha\\erro_1.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{628BE708-222B-47A1-B964-E73B15C4B0F0}|Log-in e senha\\Log-in e senha.csproj|solutionrelative:log-in e senha\\erro_1.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{628BE708-222B-47A1-B964-E73B15C4B0F0}|Log-in e senha\\Log-in e senha.csproj|c:\\users\\santa\\source\\repos\\project_hub\\log-in e senha\\log-in e senha\\erro_1.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{628BE708-222B-47A1-B964-E73B15C4B0F0}|Log-in e senha\\Log-in e senha.csproj|solutionrelative:log-in e senha\\erro_1.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{628BE708-222B-47A1-B964-E73B15C4B0F0}|Log-in e senha\\Log-in e senha.csproj|c:\\users\\santa\\source\\repos\\project_hub\\log-in e senha\\log-in e senha\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{628BE708-222B-47A1-B964-E73B15C4B0F0}|Log-in e senha\\Log-in e senha.csproj|solutionrelative:log-in e senha\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -27,6 +35,31 @@
             {
               "$type": "Document",
               "DocumentIndex": 1,
+              "Title": "Erro_1.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\santa\\Source\\Repos\\Project_Hub\\Log-in e senha\\Log-in e senha\\Erro_1.xaml.cs",
+              "RelativeDocumentMoniker": "Log-in e senha\\Erro_1.xaml.cs",
+              "ToolTip": "C:\\Users\\santa\\Source\\Repos\\Project_Hub\\Log-in e senha\\Log-in e senha\\Erro_1.xaml.cs",
+              "RelativeToolTip": "Log-in e senha\\Erro_1.xaml.cs",
+              "ViewState": "AgIAAAwAAAAAAAAAAAAhwB0AAAAZAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-16T01:21:45.155Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Erro_1.xaml",
+              "DocumentMoniker": "C:\\Users\\santa\\source\\repos\\Project_Hub\\Log-in e senha\\Log-in e senha\\Erro_1.xaml",
+              "RelativeDocumentMoniker": "Log-in e senha\\Erro_1.xaml",
+              "ToolTip": "C:\\Users\\santa\\source\\repos\\Project_Hub\\Log-in e senha\\Log-in e senha\\Erro_1.xaml*",
+              "RelativeToolTip": "Log-in e senha\\Erro_1.xaml*",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-11-16T01:12:35.377Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
               "Title": "MainWindow.xaml",
               "DocumentMoniker": "C:\\Users\\santa\\source\\repos\\Project_Hub\\Log-in e senha\\Log-in e senha\\MainWindow.xaml",
               "RelativeDocumentMoniker": "Log-in e senha\\MainWindow.xaml",
@@ -46,8 +79,8 @@
       "FloatingWindowState": {
         "Id": "25565213-aefb-428d-8f66-459c0f5c2406",
         "Display": 0,
-        "X": 15,
-        "Y": 245,
+        "X": 109,
+        "Y": 37,
         "Width": 1068,
         "Height": 520,
         "WindowState": 2
@@ -59,26 +92,26 @@
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 4,
               "Title": "MainWindow.xaml",
               "DocumentMoniker": "C:\\Users\\santa\\source\\repos\\Project_Hub\\Log-in e senha\\Log-in e senha\\MainWindow.xaml",
               "RelativeDocumentMoniker": "Log-in e senha\\MainWindow.xaml",
               "ToolTip": "C:\\Users\\santa\\source\\repos\\Project_Hub\\Log-in e senha\\Log-in e senha\\MainWindow.xaml",
               "RelativeToolTip": "Log-in e senha\\MainWindow.xaml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAHAAAAAAAAAA==",
+              "ViewState": "AgIAAIsAAAAAAAAAAAArwJ4AAAAbAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
               "WhenOpened": "2024-11-14T02:30:01.488Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 2,
               "Title": "MainWindow.xaml.cs",
               "DocumentMoniker": "C:\\Users\\santa\\source\\repos\\Project_Hub\\Log-in e senha\\Log-in e senha\\MainWindow.xaml.cs",
               "RelativeDocumentMoniker": "Log-in e senha\\MainWindow.xaml.cs",
-              "ToolTip": "C:\\Users\\santa\\source\\repos\\Project_Hub\\Log-in e senha\\Log-in e senha\\MainWindow.xaml.cs*",
-              "RelativeToolTip": "Log-in e senha\\MainWindow.xaml.cs*",
-              "ViewState": "AgIAAH4AAAAAAAAAAAAAAJAAAAAbAAAAAAAAAA==",
+              "ToolTip": "C:\\Users\\santa\\source\\repos\\Project_Hub\\Log-in e senha\\Log-in e senha\\MainWindow.xaml.cs",
+              "RelativeToolTip": "Log-in e senha\\MainWindow.xaml.cs",
+              "ViewState": "AgIAAIIAAAAAAAAAAAAcwJQAAAApAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-11-14T02:36:57.341Z",
               "EditorCaption": ""
